@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 2;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -73,13 +73,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  s1 = str1.length();
-  s2 = str2.length();
-  if (s1 === s2){
-    return true;
-  }else{
-    return false;
-  }
+ return str1.length === str2.length
 }
 
 function menosQueNoventa(num) {
@@ -125,7 +119,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num % 2 != 0){
+  if(num % 2 === 1){
     return true;
   }else{
     return false;
@@ -136,7 +130,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return num ** 2;
+  return Math.pow(num, 2);
 }
 
 function elevarAlCubo(num) {
